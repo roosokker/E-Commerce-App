@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemsActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/cloth"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imageView"
+        android:text="Name"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name"
+        android:text="100"
+        android:textColor="#000"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/quant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/price"
+        android:text="0"
+        android:textColor="#000"
+        android:textSize="30dp" />
+    <TextView
+        android:id="@+id/quantadded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/quant"
+        android:text="0"
+        android:textColor="#000"
+        android:textSize="30dp" />
+    <ImageButton
+        android:id="@+id/addbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_add"
+        android:layout_below="@+id/quantadded">
+    </ImageButton>
+    <ImageButton
+        android:id="@+id/cart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_shopping_cart"
+        android:layout_below="@+id/addbtn">
+    </ImageButton>
+    <Button
+        android:id="@+id/showcartbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cart"
+        android:layout_marginLeft="150dp"
+        android:text="Show Cart"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="showcart">
+    </Button>
+
+    <Button
+        android:id="@+id/backtoprod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/showcartbtn"
+        android:layout_marginLeft="130dp"
+        android:text="Show Products"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:onClick="backprod">
+    </Button>
+
+</RelativeLayout>

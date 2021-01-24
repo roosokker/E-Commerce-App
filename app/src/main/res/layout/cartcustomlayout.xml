@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cartitemslayout"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageButton
+        android:id="@+id/removeprod"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_minus"
+        android:backgroundTint="@color/colorwhite">
+    </ImageButton>
+
+    <ImageView
+        android:id="@+id/imagee"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cloth" />
+
+    <TextView
+        android:id="@+id/Name"
+        android:layout_width="208dp"
+        android:layout_height="30dp"
+        android:text="TextView"
+        android:layout_marginLeft="120dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/Price"
+        android:layout_width="208dp"
+        android:layout_height="33dp"
+        android:text="TextView"
+        android:layout_marginLeft="120dp"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:id="@+id/quantit"
+        android:layout_width="208dp"
+        android:layout_height="35dp"
+        android:text="TextView"
+        android:layout_marginLeft="120dp"
+        android:textAlignment="center"/>
+
+    <ImageButton
+        android:id="@+id/subquant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_minus"
+        android:backgroundTint="@color/colorwhite">
+    </ImageButton>
+
+    <ImageButton
+        android:id="@+id/addquant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="300dp"
+        android:backgroundTint="@color/colorwhite"
+        android:src="@drawable/ic_add"></ImageButton>
+
+</LinearLayout>
